@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/styles.css">
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/slidersProductosDestacados.js"></script>
+<script type="text/javascript" src="js/slidersProductosOferta.js"></script>
+<script type="text/javascript" src="js/slidersProductosCortoVencimiento.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+
+
+
+</head>
+<body>
+
+    <header>
+		
+        <div class="contenedor" >            
+            <nav class="menu-fixed">              
+                  <div class="posicionEnlaces">                    
+                    <ul>	                        
+                        <div class="posicionSearch">
+                            <form>
+                                <div class="input-group input-group-sm">
+                                  <input type="text" class="form-control" placeholder="Search">
+                                  <div class="input-group-btn">
+                                    <button class="btn btn-primary" type="submit">
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </button>
+                                  </div>
+                                </div>
+                              </form>	
+                        </div>                        
+                        <div class="posicionBotones">                            
+                            <button type="button" class="btn btn-outline-primary botones"> <i class="fa fa-cart-plus fa-1x" aria-hidden="true"></i> Carrito <span class="badge badge-light">4</span></button>  
+                            <button type="button" class="btn btn-link botones "><i class="fa fa-sign-in fa-2x" aria-hidden="true"></i> Ingresar</button>  
+                        </div>
+                        
+                        <img src="gallery/imagenBernardo lew.png" alt="">	                        	
+                                                                                    			
+                            <li><a href="#contactos" class="contactos" >PEDIDOS</a></li>
+                            <li><a href="#contactos" class="contactos" >HISTORICO</a></li>                            
+                            <li><a href="#contactos" class="contactos" >PRODUCTOS</a></li>
+                            <li><a href="#catalogo" class="catalogo">REACTIVOS</a></li>	
+                            <li><a href="#empresa" class="empresa">EQUIPOS</a></li>
+                            <li><a href="#inicio"  class="inicio">INICIO</a></li>
+                                                                            
+                    </ul>
+                </div>
+                
+            </nav>
+    
+            
+        </div>
+    </header>
+
+    
+
+    <div class="row">
+    <div id="content" class="col-lg-12 ">
+            <h3 class="text-muted">Productos Destacados</h3>
+            <div id="carruselProductosDestacados">
+               <a href="#" class="left-arrowProductosDestacados"><img src="images/left-arrow.png" /></a>
+                <a href="#" class="right-arrowProductosDestacados"><img src="images/right-arrow.png" /></a> 
+
+                <!-- <a href="#" class="left-arrow"><img src="images/flechaIzquierda.fw.png" /></a>
+                <a href="#" class="right-arrow"><img src="images/flechaDerecha.fw.png" /></a> -->
+              
+                <div class="carruselProductosDestacados">
+                    <div class="productDestacado" id="productDestacado_0">
+                        <img src="gallery/01.jpg"/>
+                        <h5>Lorem ipsum 1</h5> 
+                        <p>100.00 €</p>                       
+                        <button type="button" class="btn btn-outline-primary"> <i class="fa fa-cart-plus fa-1x" aria-hidden="true"></i><span> Agregar</span></button>
+                        
+                    </div>
+                    <div class="productDestacado" id="productDestacado_1">
+                        <img src="gallery/02.jpg"/>
+                        <h5>Lorem ipsum 2</h5>
+                        <p>100.00 €</p>
+                        <button type="button" class="btn btn-outline-primary"> <i class="fa fa-cart-plus fa-1x" aria-hidden="true"></i><span> Agregar</span></button>
+                    </div>
+                    <div class="productDestacado" id="productDestacado_2">
+                        <img src="gallery/03.jpg"/>
+                        <h5>Lorem ipsum 3</h5>
+                        <p>250.00 €</p>
+                        <button type="button" class="btn btn-outline-primary"> <i class="fa fa-cart-plus fa-1x" aria-hidden="true"></i><span> Agregar</span></button>
+                    </div>
+                    <div class="productDestacado" id="productDestacado_3">
+                        <img src="gallery/01.jpg"/>
+                        <h5>Lorem ipsum 4</h5>
+                        <p>75.00 €</p>
+                        <button type="button" class="btn btn-outline-primary"> <i class="fa fa-cart-plus fa-1x" aria-hidden="true"></i><span> Agregar</span></button>
+                    </div>
+                    <div class="productDestacado" id="productDestacado_4">
+                        <img src="gallery/02.jpg"/>
+                        <h5>Lorem ipsum 5</h5>
+                        <p>65.00 €</p>
+                        <button type="button" class="btn btn-outline-primary"> <i class="fa fa-cart-plus fa-1x" aria-hidden="true"></i><span> Agregar</span></button>
+                    </div>
+                    <div class="productDestacado" id="productDestacado_5">
+                        <img src="gallery/03.jpg" />
+                        <h5>Lorem ipsum 6</h5>
+                        <p>40.00 €</p>
+                        <button type="button" class="btn btn-outline-primary"> <i class="fa fa-cart-plus fa-1x" aria-hidden="true"></i><span> Agregar</span></button>
+                    </div>
+                </div>
+            </div>		
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="content" class="col-lg-12">
+            <h3 class="text-muted">Productos Ofertas</h3>
+            <div id="carruselProductosOferta">
+                <a href="#" class="left-arrowProductosOferta"><img src="images/left-arrow.png" /></a>
+                <a href="#" class="right-arrowProductosOferta"><img src="images/right-arrow.png" /></a> 
+              
+                <div class="carruselProductosOferta">
+                    <div class="productOferta" id="productOferta_0">
+                        <img src="gallery/01.jpg" />
+                        <h5>Lorem ipsum 1</h5>
+                        <p>165.00 €</p>
+                        <button type="button" class="btn btn-outline-primary"> <i class="fa fa-cart-plus fa-1x" aria-hidden="true"></i><span> Agregar</span></button>
+                    </div>
+                    <div class="productOferta" id="productOferta_1">
+                        <img src="gallery/02.jpg" />
+                        <h5>Lorem ipsum 2</h5>
+                        <p>100.00 €</p>
+                        <button type="button" class="btn btn-outline-primary"> <i class="fa fa-cart-plus fa-1x" aria-hidden="true"></i><span> Agregar</span></button>
+                    </div>
+                    <div class="productOferta" id="productOferta_2">
+                        <img src="gallery/03.jpg"/>
+                        <h5>Lorem ipsum 3</h5>
+                        <p>250.00 €</p>
+                        <button type="button" class="btn btn-outline-primary"> <i class="fa fa-cart-plus fa-1x" aria-hidden="true"></i><span> Agregar</span></button>
+                    </div>
+                    <div class="productOferta" id="productOferta_3">
+                        <img src="gallery/01.jpg"/>
+                        <h5>Lorem ipsum 4</h5>
+                        <p>75.00 €</p>
+                        <button type="button" class="btn btn-outline-primary"> <i class="fa fa-cart-plus fa-1x" aria-hidden="true"></i><span> Agregar</span></button>
+                    </div>
+                    <div class="productOferta" id="productOferta_4">
+                        <img src="gallery/02.jpg"/>
+                        <h5>Lorem ipsum 5</h5>
+                        <p>65.00 €</p>
+                        <button type="button" class="btn btn-outline-primary"> <i class="fa fa-cart-plus fa-1x" aria-hidden="true"></i><span> Agregar</span></button>
+                    </div>
+                    <div class="productOferta" id="productOferta_5">
+                        <img src="gallery/03.jpg"/>
+                        <h5>Lorem ipsum 6</h5>
+                        <p>40.00 €</p>
+                        <button type="button" class="btn btn-outline-primary"> <i class="fa fa-cart-plus fa-1x" aria-hidden="true"></i><span> Agregar</span></button>
+                    </div>
+                </div>
+            </div>		
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="content" class="col-lg-12">
+            <h3 class="text-muted">Productos Corto Vencimiento</h3>
+            <div id="carruselProductosCortoVencimiento">
+                <a href="#" class="left-arrowProductosCortoVencimiento"><img src="images/left-arrow.png" /></a>
+                <a href="#" class="right-arrowProductosCortoVencimiento"><img src="images/right-arrow.png" /></a> 
+              
+                <div class="carruselProductosCortoVencimiento">
+                    <div class="productCortoVencimiento" id="productCortoVencimiento_0">
+                        <img src="gallery/01.jpg" />
+                        <h5>Lorem ipsum 1</h5>
+                        <p>165.00 €</p>
+                        <button type="button" class="btn btn-outline-primary"> <i class="fa fa-cart-plus fa-1x" aria-hidden="true"></i><span> Agregar</span></button>
+                    </div>
+                    <div class="productCortoVencimiento" id="productCortoVencimiento_1">
+                        <img src="gallery/02.jpg"/>
+                        <h5>Lorem ipsum 2</h5>
+                        <p>100.00 €</p>
+                        <button type="button" class="btn btn-outline-primary"> <i class="fa fa-cart-plus fa-1x" aria-hidden="true"></i><span> Agregar</span></button>
+                    </div>
+                    <div class="productCortoVencimiento" id="productCortoVencimiento_2">
+                        <img src="gallery/03.jpg" />
+                        <h5>Lorem ipsum 3</h5>
+                        <p>250.00 €</p>
+                        <button type="button" class="btn btn-outline-primary"> <i class="fa fa-cart-plus fa-1x" aria-hidden="true"></i><span> Agregar</span></button>
+                    </div>
+                    <div class="productCortoVencimiento" id="productCortoVencimiento_3">
+                        <img src="gallery/01.jpg" />
+                        <h5>Lorem ipsum 4</h5>
+                        <p>75.00 €</p>
+                        <button type="button" class="btn btn-outline-primary"> <i class="fa fa-cart-plus fa-1x" aria-hidden="true"></i><span> Agregar</span></button>
+                    </div>
+                    <div class="productCortoVencimiento" id="productCortoVencimiento_4">
+                        <img src="gallery/02.jpg" />
+                        <h5>Lorem ipsum 5</h5>
+                        <p>65.00 €</p>
+                        <button type="button" class="btn btn-outline-primary"> <i class="fa fa-cart-plus fa-1x" aria-hidden="true"></i><span> Agregar</span></button>
+                    </div>
+                    <div class="productCortoVencimiento" id="productCortoVencimiento_5">
+                        <img src="gallery/03.jpg" />
+                        <h5>Lorem ipsum 6</h5>
+                        <p>40.00 €</p>
+                        <button type="button" class="btn btn-outline-primary"> <i class="fa fa-cart-plus fa-1x" aria-hidden="true"></i><span> Agregar</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="fixed-bottom">
+        <p class="alinearParrafo text-secondary">COPYRIGHT © 2020 BERNARDO LEW E HIJOS S.R.L.</p>
+    </footer>
+    
+</body>
+</html>

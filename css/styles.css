@@ -1,0 +1,398 @@
+:root {
+    --colorNav: white;
+    --colortextoNav:darkblue;
+    --colorTextoHover:indianred;
+    --colorBorderBottom:#C00;
+    --colorTextoSeccion:darkblue;
+    
+    --colorSombra:silver;
+    --colorInternoTextoDiv:#4183D7;
+    --colorParrafoNuestroCalatogo:#808FDA;
+    
+    --colorBordeGrilla:#E5E5E5;
+    --colorBackgroundFooter:#5B5B5B;
+    --colorBackgroundComunicateConNosotros:#F4F4F4;
+    --colorInput:white;
+    --colorTextInput:grey;
+    --colorTextFooter:#FFF;
+    --colorFondowashap:#4E7ACB;
+    --colorTextVentanaEmergente:#FFF;
+    --colorbackgroundParrafoVentanaEmergente:#FFF;
+    
+
+    --colorBackground:#F8F6F5;
+    --colorGrilla:#FDFAFA;
+    --colorFooter:white;
+   
+  }
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.1.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*---------------------------------------------------------------------------*/
+/*---------- Menu Pegagoso --------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+*{
+    font-family: Arial, Helvetica, sans-serif;
+   
+  }
+  .contenedor {
+      width: 95%;
+      max-width:1000px;
+      margin:auto;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight:700;
+      
+  }
+  
+  .contenedor p {
+      margin-bottom:40px;
+  }
+   
+  header nav {
+      background:var(--colorNav);
+      margin-bottom:20px;
+      float: left;
+  }
+   
+  header nav ul {
+      list-style: none;
+      overflow: hidden;
+  }
+  header nav ul img {
+      margin-left: 50px;
+      margin-right: 200px;
+      margin-top: 20px;
+      float:left;
+      list-style: none;
+      overflow: hidden;
+  }
+  
+   
+  header nav ul li {
+      margin-top: 60px;      
+      float: right;
+     
+  }
+   
+  header nav ul li a {
+      
+      display: block;
+      font-size: 11px;
+      padding:5px;
+      color:var(--colortextoNav);
+      text-decoration: none;
+      
+  }
+   
+  header nav ul li a:hover {
+      text-decoration: none;
+      color:var(--colorTextoHover);
+  }
+.posicionSearch { 
+    position:absolute;     
+    width: 30%;
+    align-items: center;
+    margin-top: 30px;  
+    left:0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+
+  
+
+  .posicionBotones{
+      position:absolute;   
+      margin-top: 10px;   
+      right:11%;
+     
+  }
+  .posicionEnlaces{
+    position: relative;
+    margin-right:50px;
+    
+  }
+
+  .botones{     
+      text-decoration: none !important;
+  }
+
+  
+     
+   
+  /* --- Clase que agregaremos cuando el usuario haga scroll --- */
+  .menu-fixed {
+      position:fixed;
+      z-index:1000;
+      top:0;
+      /*max-width:1000px;*/
+      left:0;
+      height: 100px;
+      width:100%;
+      -webkit-box-shadow: 0px 5px 5px -1px rgba(204,204,204,0.5);
+      -moz-box-shadow: 0px 5px 5px -1px rgba(204,204,204,0.5);
+      box-shadow: 0px 5px 5px -1px rgba(204,204,204,0.5);
+      
+  }
+
+
+/*-------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------*/
+
+html {
+  position: relative;
+  min-height: 100%;
+
+  
+}
+
+body {
+  padding-top: 80px;
+  margin-bottom: 60px;
+  background-color: var(--colorBackground);
+}
+
+.breadcrumb {
+    background-color: rgba(0,0,0,.03);
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+#content {
+   /* margin-bottom: 25px;*/
+}
+
+.adsbygoogle {
+  /*  margin-bottom: 15px;*/
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*--------------------Carrusel Productos Destacados----------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+
+#carruselProductosDestacados {
+    float:left;
+    width:89%;
+    overflow:hidden;
+    height:240px;
+    position:relative;
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:5%;
+    margin-right: 5%;
+    background-color: var(--colorGrilla);
+    
+}
+
+#carruselProductosDestacados .left-arrowProductosDestacados {
+    position:absolute;
+    left:5px;
+    z-index:1;
+    top:50%;
+    margin-top:-9px;
+}
+
+#carruselProductosDestacados .right-arrowProductosDestacados {
+    position:absolute;
+    right:13px;
+    z-index:1;
+    top:50%;
+    margin-top:-9px;
+}
+
+.carruselProductosDestacados {
+    width:4000px;
+    left:0px;
+    position:absolute;
+    z-index:0;
+    
+    
+}
+
+.carruselProductosDestacados>div {
+    float: left;
+    height: 240px;
+    margin-right: 5px;
+    width: 195px;
+    text-align:center;
+    
+}
+
+.carruselProductosDestacados img {
+    cursor:pointer;
+    width: 193px;
+    height:100px;
+}
+.productDestacado {
+    border:#CCCCCC 1px solid;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*-------------------  Carrusel Productos Oferta   ----------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+
+#carruselProductosOferta {
+    float:left;
+    width:89%;
+    overflow:hidden;
+    height:240px;
+    position:relative;
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:5%;
+    margin-right: 5%;
+    background-color: var(--colorGrilla);
+    
+}
+
+#carruselProductosOferta .left-arrowProductosOferta {
+    position:absolute;
+    left:5px;
+    z-index:1;
+    top:50%;
+    margin-top:-9px;
+}
+
+#carruselProductosOferta .right-arrowProductosOferta {
+    position:absolute;
+    right:13px;
+    z-index:1;
+    top:50%;
+    margin-top:-9px;
+}
+
+.carruselProductosOferta {
+    width:4000px;
+    left:0px;
+    position:absolute;
+    z-index:0;
+    
+    
+}
+
+.carruselProductosOferta>div {
+    float: left;
+    height: 240px;
+    margin-right: 5px;
+    width: 195px;
+    text-align:center;
+    
+}
+
+.carruselProductosOferta img {
+    cursor:pointer;
+    width: 193px;
+    height:100px;
+}
+.productOferta {
+    border:#CCCCCC 1px solid;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*-------------------  Carrusel Productos Corto Vencimiento   -----------------------*/
+/*-----------------------------------------------------------------------------------*/
+#carruselProductosCortoVencimiento {
+    float:left;
+    width:89%;
+    overflow:hidden;
+    height:240px;
+    position:relative;
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left:5%;
+    margin-right: 5%;
+    background-color: var(--colorGrilla);
+    
+}
+
+#carruselProductosCortoVencimiento .left-arrowProductosCortoVencimiento {
+    position:absolute;
+    left:5px;
+    z-index:1;
+    top:50%;
+    margin-top:-9px;
+}
+
+#carruselProductosCortoVencimiento .right-arrowProductosCortoVencimiento {
+    position:absolute;
+    right:13px;
+    z-index:1;
+    top:50%;
+    margin-top:-9px;
+}
+
+.carruselProductosCortoVencimiento {
+    width:4000px;
+    left:0px;
+    position:absolute;
+    z-index:0;
+    
+    
+}
+
+.carruselProductosCortoVencimiento>div {
+    float: left;
+    height: 240px;
+    margin-right: 5px;
+    width: 195px;
+    text-align:center;
+    
+}
+
+.carruselProductosCortoVencimiento img {
+    cursor:pointer;
+    width: 193px;
+    height:100px;
+}
+.productCortoVencimiento {
+    border:#CCCCCC 1px solid;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+/*------------------------------------------------------------------------------*/
+
+
+
+h5 {
+    margin-top: 1rem;
+}
+h3{
+    margin-top: 3rem;
+    margin-left:5%;
+}
+
+
+/*------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------*/
+/*--------------- Footer -------------------------------------------------------*/
+/*------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------*/
+
+footer{
+    width: 100%;
+    height: 5%;
+    background-color: var(--colorFooter);
+    -webkit-box-shadow: 0px -5px 5px -1px rgba(204,204,204,0.5);
+    -moz-box-shadow: 0px -5px 5px -1px rgba(204,204,204,0.5);
+    box-shadow: 0px -5px 5px -1px rgba(204,204,204,0.5);
+}
+.alinearParrafo{
+text-align: center;
+margin-top: 3px;
+}
+
+
